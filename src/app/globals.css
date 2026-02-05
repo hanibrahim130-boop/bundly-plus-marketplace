@@ -118,7 +118,7 @@
     text-align: right;
   }
 
-  [dir="rtl"] .tracking-[2px],
+  [dir="rtl"] .tracking-\[2px\],
   [dir="rtl"] .tracking-wider,
   [dir="rtl"] .tracking-widest {
     letter-spacing: 0;
