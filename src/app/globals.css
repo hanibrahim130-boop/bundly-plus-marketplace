@@ -59,16 +59,32 @@
   --animate-accordion-up: accordion-up 0.3s ease-out;
 
   @keyframes accordion-down {
-    from { height: 0; opacity: 0; }
-    to { height: var(--radix-accordion-content-height); opacity: 1; }
+    from {
+      height: 0;
+      opacity: 0;
+    }
+
+    to {
+      height: var(--radix-accordion-content-height);
+      opacity: 1;
+    }
   }
+
   @keyframes accordion-up {
-    from { height: var(--radix-accordion-content-height); opacity: 1; }
-    to { height: 0; opacity: 0; }
+    from {
+      height: var(--radix-accordion-content-height);
+      opacity: 1;
+    }
+
+    to {
+      height: 0;
+      opacity: 0;
+    }
   }
 }
 
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -118,13 +134,17 @@
     text-align: right;
   }
 
-  [dir="rtl"] .tracking-\[2px\],
   [dir="rtl"] .tracking-wider,
   [dir="rtl"] .tracking-widest {
     letter-spacing: 0;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 1.1;
@@ -217,6 +237,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
